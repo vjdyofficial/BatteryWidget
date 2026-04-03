@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: Segoe UI, sans-serif;
+  background: rgba(0,0,0,0);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #0078D7;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #005A9E;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 0.9em;
+}

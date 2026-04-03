@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battery Widget</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="widget">
+    <h2>Battery Modes</h2>
+    <button onclick="setMode('balanced')">Balanced</button>
+    <button onclick="setMode('high')">High Performance</button>
+    <button onclick="setMode('saving')">Power Saving</button>
+    <button onclick="setMode('ultimate')">Ultimate</button>
+    <p id="status"></p>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+{
+  "name": "battery-widget",
+  "version": "1.0.0",
+  "productName": "Battery Modes",
+  "description": "Battery Modes to set",
+  "displayName": "Battery Modes",
+  "author": "VJDY Official Pictures",
+  "license": "Apache-2.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^39.8.0",
+    "electron-builder": "^24.6.0"
+  },
+  "build": {
+    "appId": "app.vjdyofficial.proxima",
+    "productName": "Battery Modes",
+    "icon": "icon.ico",
+    "asar": false,
+    "files": [
+      "**/*"
+    ],
+    "win": {
+      "icon": "icon.ico",
+      "target": [
+        "nsis"
+      ]
+    },
+    "nsis": {
+      "oneClick": true,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": false,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Battery Modes",
+      "artifactName": "batterymodes-setup.exe",
+      "runAfterFinish": true
+    }
+  }
+}
